@@ -42,7 +42,7 @@ app.post("/api/contact", bodyParser.urlencoded({ extended: false}), (req, res) =
     const phone = req.body.phone;
     const mail = {
         from: name,
-        to: process.env.EMAIL_ADRESS,
+        to: process.env.EMAIL_CONTACT,
         subject : "Contact Form Submission - Portfolio",
         html: `<p>Name: ${name}</p>
                <p>Email: ${email}</p>
